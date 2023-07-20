@@ -19,8 +19,8 @@ def start_button(client):
     if not FORCE_SUB_CHANNEL and FORCE_SUB_GROUP and FORCE_SUB_GROUP2:
         buttons = [
             [
-                InlineKeyboardButton(text="GROUP", url=client.invitelink2),
-                InlineKeyboardButton(text="GROUP", url=client.invitelink3),
+                InlineKeyboardButton(text="CHANNEL", url=client.invitelink2),
+                InlineKeyboardButton(text="CHANNEL", url=client.invitelink3),
             ],
             [
                 InlineKeyboardButton(text="• ᴛᴇɴᴛᴀɴɢ sᴀʏᴀ •", callback_data="about"),
@@ -31,7 +31,7 @@ def start_button(client):
     if FORCE_SUB_CHANNEL and not FORCE_SUB_GROUP and not FORCE_SUB_GROUP2:
         buttons = [
             [
-                InlineKeyboardButton(text="CHANNEL", url=client.invitelink),
+                InlineKeyboardButton(text="GRUOP", url=client.invitelink),
             ],
             [
                 InlineKeyboardButton(text="• ᴛᴇɴᴛᴀɴɢ sᴀʏᴀ •", callback_data="about"),
@@ -57,11 +57,11 @@ def start_button(client):
                 InlineKeyboardButton(text="• ᴛᴇɴᴛᴀɴɢ sᴀʏᴀ •", callback_data="about"),
             ],
             [
-                InlineKeyboardButton(text="GROUP", url=client.invitelink),
-                InlineKeyboardButton(text="GROUP", url=client.invitelink2),
+                InlineKeyboardButton(text="CHANNEL", url=client.invitelink),
+                InlineKeyboardButton(text="CHANNEL", url=client.invitelink2),
             ],
             [
-                InlineKeyboardButton(text="CHANNEL", url=client.invitelink3),
+                InlineKeyboardButton(text="GROUP", url=client.invitelink3),
             ],
             [
                 InlineKeyboardButton(text="• ᴛᴜᴛᴜᴘ •", callback_data="close"),
